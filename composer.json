@@ -1,0 +1,33 @@
+{
+    "name": "com.web.app/easyrepair",
+    "description": "Un site de qui offre des reparations",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "FaouzKK",
+            "role": "Dev",
+            "email": "faouzanekouko@gmail.com"
+        },
+        {
+            "name": "SMART_X",
+            "role": "Dev",
+            "email": "smartx@gmail.com"
+        },
+        {
+            "name": "EXP_Dev",
+            "role": "Dev",
+            "email": "exp@gmail.com"
+        }
+    ],
+    "require": {
+        "altorouter/altorouter": "^2.0"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^7.1"
+    }
+}

@@ -5,13 +5,16 @@
     "autoload": {
         "psr-4": {
             "App\\": "src/"
-        }
+        },
+        "files": [
+            "src/function/Mailer.php"
+        ]
     },
     "authors": [
         {
             "name": "FaouzKK",
             "role": "Dev",
-            "email": "faouzanekouko@gmail.com"
+            "homepage": "https://github.com/FaouzKK"
         },
         {
             "name": "SMART_X",
@@ -25,9 +28,12 @@
         }
     ],
     "require": {
-        "altorouter/altorouter": "^2.0"
+        "altorouter/altorouter": "^2.0",
+        "vlucas/phpdotenv": "^5.6",
+        "phpmailer/phpmailer": "^6.9"
     },
     "require-dev": {
-        "symfony/var-dumper": "^7.1"
+        "symfony/var-dumper": "^7.1",
+        "phpunit/phpunit": "11"
     }
 }

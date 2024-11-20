@@ -1,2 +1,7 @@
 vendor
 composer.lock
+build
+.phpunit.cache
+tests
+phpunit.xml
+.vscode

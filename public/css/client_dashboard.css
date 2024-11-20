@@ -1,0 +1,259 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+* li {
+    list-style: none;
+}
+
+.hidden-item {
+    display: none !important;
+}
+
+
+/* Side-bar Configuration*/
+
+#side-bar {
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#client-icon {
+    border-radius: 10px;
+}
+
+#side-option ul,
+#side-down ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+#side-option ul li,
+#side-down ul li {
+    list-style: none;
+    margin: 5px 0px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#side-option ul li:hover,
+#side-down ul li:hover {
+    background-color: #f8f9fa
+}
+
+#side-down {
+    margin-top: auto;
+    padding: 10px 0px;
+    border-top: solid 1px #818282;
+}
+
+/* Main content configuration*/
+
+#main-content {
+    width: 80%;
+    height: 100%;
+    border-radius: 10px;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#main-search-params * {
+    background-color: #fcfdff;
+}
+
+#main-search-params input,
+#main-search-params span {
+    border: none;
+    margin: 0px;
+    width: 100%;
+    caret-color: black;
+}
+
+#main-search-params input:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    cursor: text;
+}
+
+#main-table table {
+
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    padding: 10px;
+
+}
+
+#main-table th,
+#main-table td {
+    padding: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100px;
+    text-wrap: nowrap;
+}
+
+#main-table th:first-child,
+#main-table td:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#main-table th:last-child,
+#main-table td:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#main-table th {
+    background-color: #818282;
+    color: #f8f9fa;
+}
+
+#main-table td {
+    background-color: #ffffff;
+    color: black;
+    font-size: 13px;
+}
+
+#main-table tr:hover>td {
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    cursor: pointer;
+
+}
+
+#main-table tr:hover>td:first-child {
+    border-left: solid 1px black;
+}
+
+#main-table tr:hover>td:last-child {
+    border-right: solid 1px black;
+}
+
+#main-page-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: end;
+}
+
+#main-page-nav ul {
+    display: flex;
+    gap: 10px
+}
+
+#main-page-nav ul li {
+    border-radius: 10px;
+}
+
+/*Configuration du modal*/
+#new-request-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#new-request-modal>div {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    min-width: 50%;
+    min-height: 50%;
+}
+
+textarea {
+    resize: vertical;
+    width: 100%;
+    min-height: 50px;
+    font-size: 15px;
+    max-height: 160px;
+}
+
+#formulaire {
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-wrap: nowrap;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    max-width: 300px;
+
+}
+
+
+
+/* Configuration du petit cadre d'information*/
+#request-info {
+    position: fixed;
+    top: 50px;
+    right: 40px;
+    max-width: 40vw;
+    text-wrap: wrap;
+}
+
+
+/* Configuration de request-modal */
+#request-info-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#request-modal {
+    min-width: 40vw;
+    min-height: 40vh;
+    max-height: 80vh;
+    max-width: 70vh;
+    background-color: rgba(240, 240, 240);
+    border-radius: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#request-modal > div > h4 {
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+#request-modal > div > p {
+    padding-left: 20px;
+}
